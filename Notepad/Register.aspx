@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Notepad.Login" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="Notepad.Register" %>
 
 <!DOCTYPE html>
 
@@ -47,12 +47,6 @@
             font-size: 20px;
         }
 
-        .forget-password {
-            position: absolute;
-            right: 85px;
-            bottom: 30px;
-        }
-
         .email-textbox {
             position: absolute;
             top: 25%;
@@ -69,7 +63,7 @@
             position: relative;
         }
 
-        #LoginButton {
+        #RegisterButton {
             width: 160px;
             height: 50px;
             border-radius: 25px;
@@ -92,7 +86,7 @@
             margin-left: 30%;
         }
 
-        #DontHaveAnAccountLink {
+        #AlreadyHaveAnAccountLink {
             position: absolute;
             bottom: 15px;
             left: 37%;
@@ -105,19 +99,18 @@
 
             <div id="container">
                 <div id="navbar">
-                    <h1>Login</h1>
+                    <h1>Sign up</h1>
                 </div>
 
                 <div id="body">
                     <asp:TextBox ID="EmailTextBox" class="email-textbox" runat="server" PlaceHolder="Email"></asp:TextBox>
-                    <asp:TextBox ID="PasswordTextbox" class="password-textbox" runat="server" PlaceHolder="Password " TextMode="Password"></asp:TextBox>
-                    <a href="ForgetPasswordPage.aspx" class="forget-password">Forget Password ?</a>
+                    <asp:TextBox ID="PasswordTextbox" class="password-textbox" runat="server" PlaceHolder="Password" TextMode="Password"></asp:TextBox>
                 </div>
 
                 <div id="footer">
                     <asp:Label ID="EmailOrPasswordIsIncorrectLabel" class="email-or-password-incorrect-label" runat="server">Email or password is incorrect</asp:Label>
-                    <asp:Button ID="LoginButton" OnClick="LoginButton_Click" Text="Login" runat="server"/>
-                    <asp:LinkButton ID="DontHaveAnAccountLink" OnClick="DontHaveAnAccountLink_Click" runat="server">Don't have an account ?</asp:LinkButton>
+                    <asp:Button ID="RegisterButton" OnClick="RegisterButton_Click" runat="server" Text="Sign up" />
+                    <asp:LinkButton ID="AlreadyHaveAnAccountLink" OnClick="AlreadyHaveAnAccountLink_Click" runat="server">Already have an account ?</asp:LinkButton>
                 </div>
             </div>
 

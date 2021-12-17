@@ -42,6 +42,15 @@ namespace Notepad
         protected global::System.Web.UI.WebControls.TextBox PasswordTextbox;
 
         /// <summary>
+        /// EmailOrPasswordIsIncorrectLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label EmailOrPasswordIsIncorrectLabel;
+
+        /// <summary>
         /// LoginButton control.
         /// </summary>
         /// <remarks>

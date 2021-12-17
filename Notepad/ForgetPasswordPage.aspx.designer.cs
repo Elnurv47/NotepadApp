@@ -11,7 +11,7 @@ namespace Notepad
 {
 
 
-    public partial class Home
+    public partial class ForgetPasswordPage
     {
 
         /// <summary>
@@ -33,66 +33,102 @@ namespace Notepad
         protected global::System.Web.UI.WebControls.Label EmailLabel;
 
         /// <summary>
-        /// LogoutButton control.
+        /// EmailTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LogoutButton;
+        protected global::System.Web.UI.WebControls.TextBox EmailTextBox;
 
         /// <summary>
-        /// NewNoteButton control.
+        /// VerificationLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button NewNoteButton;
+        protected global::System.Web.UI.WebControls.Label VerificationLabel;
 
         /// <summary>
-        /// NotesContainer control.
+        /// CodeTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl NotesContainer;
+        protected global::System.Web.UI.WebControls.TextBox CodeTextBox;
 
         /// <summary>
-        /// NoteNavbar control.
+        /// PasswordLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl NoteNavbar;
+        protected global::System.Web.UI.WebControls.Label PasswordLabel;
 
         /// <summary>
-        /// NoteTitle control.
+        /// PasswordTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NoteTitle;
+        protected global::System.Web.UI.WebControls.TextBox PasswordTextBox;
 
         /// <summary>
-        /// NoteContent control.
+        /// ConfirmPasswordLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NoteContent;
+        protected global::System.Web.UI.WebControls.Label ConfirmPasswordLabel;
 
         /// <summary>
-        /// SaveNoteButton control.
+        /// PasswordConfirmTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SaveNoteButton;
+        protected global::System.Web.UI.WebControls.TextBox PasswordConfirmTextBox;
+
+        /// <summary>
+        /// ResetButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ResetButton;
+
+        /// <summary>
+        /// ConfirmButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ConfirmButton;
+
+        /// <summary>
+        /// ChangeButton control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ChangeButton;
+
+        /// <summary>
+        /// ErrorLabel control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label ErrorLabel;
     }
 }

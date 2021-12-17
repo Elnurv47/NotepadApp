@@ -80,3 +80,7 @@ C:\Users\Elnur\Desktop\Notepad\Notepad\obj\Debug\Notepad.csproj.CopyComplete
 C:\Users\Elnur\Desktop\Notepad\Notepad\obj\Debug\Notepad.dll
 C:\Users\Elnur\Desktop\Notepad\Notepad\obj\Debug\Notepad.pdb
 C:\Users\Elnur\Desktop\Notepad\Notepad\obj\Debug\Notepad.csproj.AssemblyReference.cache
+C:\Users\Elnur\Desktop\Notepad\Notepad\obj\Debug\Notepad.Migrations.UserDBAdded.resources
+C:\Users\Elnur\Desktop\Notepad\Notepad\obj\Debug\Notepad.Migrations.Third.resources
+C:\Users\Elnur\Desktop\Notepad\Notepad\obj\Debug\Notepad.Migrations.Fourth.resources
+C:\Users\Elnur\Desktop\Notepad\Notepad\obj\Debug\Notepad.Migrations.fifth.resources

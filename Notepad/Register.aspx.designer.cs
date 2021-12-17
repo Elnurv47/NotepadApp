@@ -11,7 +11,7 @@ namespace Notepad
 {
 
 
-    public partial class Home
+    public partial class Register
     {
 
         /// <summary>
@@ -24,75 +24,48 @@ namespace Notepad
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// EmailLabel control.
+        /// EmailTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label EmailLabel;
+        protected global::System.Web.UI.WebControls.TextBox EmailTextBox;
 
         /// <summary>
-        /// LogoutButton control.
+        /// PasswordTextbox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button LogoutButton;
+        protected global::System.Web.UI.WebControls.TextBox PasswordTextbox;
 
         /// <summary>
-        /// NewNoteButton control.
+        /// EmailOrPasswordIsIncorrectLabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button NewNoteButton;
+        protected global::System.Web.UI.WebControls.Label EmailOrPasswordIsIncorrectLabel;
 
         /// <summary>
-        /// NotesContainer control.
+        /// RegisterButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl NotesContainer;
+        protected global::System.Web.UI.WebControls.Button RegisterButton;
 
         /// <summary>
-        /// NoteNavbar control.
+        /// AlreadyHaveAnAccountLink control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl NoteNavbar;
-
-        /// <summary>
-        /// NoteTitle control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NoteTitle;
-
-        /// <summary>
-        /// NoteContent control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox NoteContent;
-
-        /// <summary>
-        /// SaveNoteButton control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button SaveNoteButton;
+        protected global::System.Web.UI.WebControls.LinkButton AlreadyHaveAnAccountLink;
     }
 }

@@ -21,19 +21,18 @@ namespace Notepad
         {
             Home.CurrentlySelectedNoteItem = this;
 
-            Note note = new Note()
+            User user = new User()
             {
-                Title = "Test",
-                Content = "",
-                DateCreated = DateTime.Now
+                Email = "123",
+                Password = "1234"
             };
 
-            DatabaseManager.Instance.Notes.Add(note);
+            DatabaseManager.Instance.Users.Add(user);
             DatabaseManager.Instance.SaveChanges();
 
             Note clickedNote = DatabaseManager.Instance.Notes.FirstOrDefault(searchNote => note.Id == searchNote.Id);
-            GlobalReference.Home.NoteTitleGetter.Text = note.Title;
-            GlobalReference.Home.NoteContentGetter.Text = note.Content;
+            GlobalReference.Home.NoteTitleGetter.Text = clickedNote.Title;
+            GlobalReference.Home.NoteContentGetter.Text = clickedNote.Content;
         }
     }
 }

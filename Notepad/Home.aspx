@@ -17,6 +17,7 @@
             height: 100vh;
             background-color: black;
             float: left;
+            position: relative;
         }
 
         #account-info {
@@ -25,30 +26,29 @@
             background-color: #151515;
         }
 
-        #full-name, #email {
+        .email-label {
             margin: 0px;
+            display: block;
             height: 50%;
             color: white;
-            padding-left: 30px;
-            padding-right: 30px;
-        }
-
-        #full-name {
-            font-size: 24px;
-            padding-top: 15px;
-        }
-
-        #email {
             font-size: 20px;
+            padding-top: 40px;
+            padding-left: 40px;
+            padding-right: 40px;
         }
         
-        #NewNoteButton {
+        #NewNoteButton, .logout-button{
             width: 50%;
             height: 50px;
             background-color: deepskyblue;
             border: none;
             border-radius: 30px;
             margin: 12.5% 25% 12.5% 25%;
+        }
+
+        .logout-button {
+            position: absolute;
+            bottom: 20px;
         }
 
         #notes-panel-div {
@@ -159,13 +159,8 @@
             <div id="menu-div">
 
                 <div id="account-info">
-                    <p id ="full-name">
-                        Elnur Valiyev
-                    </p>
-
-                    <p id="email">
-                        elnurdev@gmail.com
-                    </p>
+                    <asp:Label ID="EmailLabel" class="email-label" runat="server"></asp:Label>
+                    <asp:Button ID="LogoutButton" class="logout-button" OnClick="LogoutButton_Click" Text="Log out" runat="server" />
                 </div>
 
                 <div id="menu-items">

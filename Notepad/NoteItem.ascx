@@ -22,9 +22,25 @@
             border: none;
         }
 
-            .show-note-button:hover {
-                background-color: white;
-            }
+        .show-note-button:hover {
+            background-color: white;
+        }
+
+        .container {
+            width: 100%;
+            height: 150px;
+            background-color: orange;
+            position: relative;
+        }
+
+        .show-note-button {
+            width: 80px;
+            height: 60px;
+            border: none;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+        }
     </style>
 
     <script type="text/javascript" language="javascript">
@@ -36,7 +52,6 @@
         }
 
         function setNoteContent(noteTitle, noteContent) {
-            console.log('here');
             document.getElementById('NoteTitle').value = noteTitle;
             document.getElementById('NoteContent').value = noteContent;
         }
@@ -48,11 +63,9 @@
 
 </head>
 <body>
-    <div class="card w-100">
-        <div class="card-body card-body-extension">
-            <h5 id="CardTitle" class="card-title" runat="server"><%=Note.Title%></h5>
-            <asp:Button ID="Button1" runat="server" Text="Button" OnClick="ShowNoteButton_Click"></asp:Button>
-        </div>
+    <div class="container">
+        <asp:Label ID="Title" runat="server">Untitled</asp:Label>
+        <asp:Button ID="ShowNoteButton" OnClick="ShowNoteButton_Click" class="show-note-button" Text="Show" runat="server"/>
     </div>
 </body>
 </html>

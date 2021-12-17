@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Notepad.Models;
 using Notepad.DatabaseUtility;
 using System.Web.UI.WebControls;
+using System.Net.Mail;
 
 namespace Notepad
 {
@@ -11,6 +12,23 @@ namespace Notepad
     {
         public static Home Home { get; set; }
     }
+
+    public static class EmailValidator
+    {
+        public static bool IsEmailValid(string email)
+        {
+            try
+            {
+                MailAddress m = new MailAddress(email);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+    }
+
     public partial class Home : Page
     {
         private static NoteItem currentlySelectedNoteItem;
@@ -24,6 +42,9 @@ namespace Notepad
         protected void Page_Load(object sender, EventArgs e)
         {
             GlobalReference.Home = this;
+
+            EmailLabel.Text = (string)Session["email"];
+
             RefreshNotes();
         }
 
@@ -65,6 +86,12 @@ namespace Notepad
             {
                 NotesContainer.Controls.Add(control);
             }
+        }
+
+        protected void LogoutButton_Click(object sender, EventArgs e)
+        {
+            Session.Abandon();
+            Response.Redirect("Login.aspx");
         }
     }
 }
